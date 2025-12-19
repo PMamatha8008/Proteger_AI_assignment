@@ -92,6 +92,3 @@ This project implements the Figma design which includes:
 - **Tablet**: 768px - 1024px
 - **Mobile**: Below 768px
 
-## Author
-
-Created for Proteger AI Assignment
