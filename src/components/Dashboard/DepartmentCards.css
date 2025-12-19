@@ -151,8 +151,10 @@
 
 @media (max-width: 768px) {
   .department-cards {
-    padding: 0 16px;
+    padding: 16px;
     gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .department-group {

@@ -6,6 +6,9 @@
 
 @media (max-width: 768px) {
   .dashboard {
-    padding: 16px;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }

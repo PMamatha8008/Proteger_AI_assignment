@@ -9,11 +9,10 @@ function Header() {
       <header className="mobile-header">
         <div className="mobile-header-content">
           <div className="mobile-logo">
-            <span className="logo-v">V</span>
             <span className="logo-text">Vajra</span>
           </div>
           <button className="menu-btn">
-            <Menu size={24} />
+            <Menu size={28} />
           </button>
         </div>
         <h1 className="mobile-title">Monthly Report</h1>
