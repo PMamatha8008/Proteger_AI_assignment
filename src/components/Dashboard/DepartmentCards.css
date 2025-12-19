@@ -1,0 +1,229 @@
+.department-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.department-group {
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.department-section {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.department-section:last-child {
+  border-bottom: none;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+}
+
+.header-left {
+  flex: 1;
+}
+
+.section-title {
+  color: #4ade80;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: right;
+}
+
+.stat-line {
+  font-size: 13px;
+  color: white;
+}
+
+.stat-line .stat-label {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.stat-line .stat-val {
+  color: #22d3ee;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.dept-name-row {
+  padding: 14px 24px;
+  background: #0ea5e9;
+  color: white;
+  font-size: 15px;
+}
+
+.dept-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dept-name {
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.assets-row {
+  display: flex;
+  padding: 24px;
+  gap: 8px;
+  background: white;
+}
+
+.asset-card-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.asset-card {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.arrow-connector {
+  width: 32px;
+  height: 32px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.asset-row {
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.asset-row:last-child {
+  margin-bottom: 0;
+}
+
+.asset-label {
+  color: #374151;
+  font-weight: 500;
+  min-width: 90px;
+}
+
+.asset-value {
+  color: #1f2937;
+}
+
+.asset-value.code {
+  color: #3b82f6;
+}
+
+@media (max-width: 1200px) {
+  .assets-row {
+    flex-wrap: wrap;
+  }
+
+  .asset-card-wrapper {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .arrow-connector {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .department-cards {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .department-group {
+    border-radius: 12px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .section-title {
+    font-size: 14px;
+  }
+
+  .header-right {
+    text-align: left;
+    width: 100%;
+  }
+
+  .stat-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .dept-name-row {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .assets-row {
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .asset-card-wrapper {
+    flex: 1;
+    width: 100%;
+  }
+
+  .asset-card {
+    padding: 14px;
+    position: relative;
+  }
+
+  .arrow-connector {
+    display: flex;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: #e5e7eb;
+    margin-left: 0;
+  }
+
+  .asset-row {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .asset-label {
+    min-width: 80px;
+    font-size: 12px;
+  }
+
+  .asset-value {
+    font-size: 12px;
+  }
+}
